@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".main_home">
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/black"
+                android:text="Clothes"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/cloth1"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/b" />
+
+                    <ImageButton
+                        android:id="@+id/cloth2"
+                        android:layout_width="251dp"
+                        android:layout_height="179dp"
+                        android:layout_marginStart="36dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/cloth1"
+                        app:layout_constraintTop_toTopOf="@+id/cloth1"
+                        app:srcCompat="@drawable/prod2" />
+
+                    <ImageButton
+                        android:id="@+id/cloth3"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/cloth2"
+                        app:layout_constraintTop_toTopOf="@+id/cloth2"
+                        app:srcCompat="@drawable/prod3" />
+
+                    <ImageButton
+                        android:id="@+id/cloth4"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/cloth3"
+                        app:layout_constraintTop_toTopOf="@+id/cloth3"
+                        app:srcCompat="@drawable/prod4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="268dp"
+                android:background="@color/black"
+                android:text="Utensils"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal2"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/jew1"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/b" />
+
+                    <ImageButton
+                        android:id="@+id/jew2"
+                        android:layout_width="251dp"
+                        android:layout_height="179dp"
+                        android:layout_marginStart="36dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/jew1"
+                        app:layout_constraintTop_toTopOf="@+id/jew1"
+                        app:srcCompat="@drawable/prod2" />
+
+                    <ImageButton
+                        android:id="@+id/jew3"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/jew2"
+                        app:layout_constraintTop_toTopOf="@+id/jew2"
+                        app:srcCompat="@drawable/prod3" />
+
+                    <ImageButton
+                        android:id="@+id/jew4"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/jew3"
+                        app:layout_constraintTop_toTopOf="@+id/jew3"
+                        app:srcCompat="@drawable/prod4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="540dp"
+                android:background="@color/black"
+                android:text="Accessories"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal3"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="580dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/ut1"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/b" />
+
+                    <ImageButton
+                        android:id="@+id/ut2"
+                        android:layout_width="251dp"
+                        android:layout_height="179dp"
+                        android:layout_marginStart="36dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/ut1"
+                        app:layout_constraintTop_toTopOf="@+id/ut1"
+                        app:srcCompat="@drawable/prod2" />
+
+                    <ImageButton
+                        android:id="@+id/ut3"
+                        android:layout_width="199dp"
+                        android:layout_height="182dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@+id/ut2"
+                        app:layout_constraintTop_toTopOf="@+id/ut2"
+                        app:srcCompat="@drawable/prod3" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
